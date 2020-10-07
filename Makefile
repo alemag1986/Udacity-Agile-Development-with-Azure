@@ -1,21 +1,24 @@
+venv_path = ~/.udacityenv
+venv_path_active = $(venv_path)/bin/activate
+
 install:
-	pip install --upgrade pip &&\
-		pip install -r requirements.txt
+	. $(venv_path_active) &&\
+		pip install --upgrade pip &&\
+			pip install -r requirements.txt
 
 test:
-	python -m pytest -vv test_hello.py
+	. $(venv_path_active) &&\
+		python -m pytest -vv test_hello.py
+
+lint:
+	. $(venv_path_active) &&\
+		pylint --disable=R,C hello.py
 
 updatepython:
 	python3 -m pip install --upgrade pip
 
 installenv:
-	python3 -m venv ~/.udacityenv
+	python3 -m venv $(venv_path)
 
-activateenv:
-	source ~/.udacityenv/bin/activate
-
-lint:
-	pylint --disable=R,C hello.py
-
-envsetup: updatepython installenv activateenve
+envsetup: updatepython installenv
 all: install lint test
