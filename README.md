@@ -1,37 +1,12 @@
 ![Python application test with Github Actions](https://github.com/alemag1986/udacity-cicd-pipelines/workflows/Python%20application%20test%20with%20Github%20Actions/badge.svg?branch=main&event=push)
 
-### Intro 
-
-
-
-### Getting Started
-
-### Dependencies/Pre-Requisites
-
-
-### Instructions
-
-Activate Cloud Shell
-Generate ssh keys
-ssh-keygen -t rsa
-Add keys in GitHub
-clone Github
-run make envsetup
-run make all
-
-enable github actions -> set up a workflow yourself
-update YAML with content from utils/pythonapp.yml
-save action with pythonapp.yml name
-
-
-
 # Overview
 
-This repo contains the Building a CI/CD Pipeline project for the Udacity Azure Cloud DevOps Nanodegree Program.
+Udacity final project building a CI/CD Pipeline for a Python-based machine learning application.
 
 ## Project Plan
 
-* [Trello board]()
+* [Trello board](https://trello.com/b/bGd4Kp9p/cicd-pipeline-project)
 * A link to a spreadsheet that includes the original and final project plan>
 
 ## Instructions
@@ -40,6 +15,21 @@ This repo contains the Building a CI/CD Pipeline project for the Udacity Azure C
 * Architectural Diagram (Shows how key parts of the system work)>
 
 <TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
+
+### Dependencies/Pre-Requisites
+
+### Instructions
+
+- Activate Cloud Shell
+- Generate ssh keys
+- ssh-keygen -t rsa
+- Add keys in GitHub
+- clone Github
+- run make envsetup
+- run make all
+- enable github actions -> set up a workflow yourself
+- update YAML with content from utils/pythonapp.yml
+- save action with pythonapp.yml name
 
 * Project running on Azure App Service
 
@@ -63,7 +53,6 @@ Port: 443
 ```
 
 * Output of streamed log files from deployed application
-
 > 
 
 ## Enhancements
