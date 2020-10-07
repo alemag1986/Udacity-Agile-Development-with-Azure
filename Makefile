@@ -5,11 +5,17 @@ install:
 test:
 	python -m pytest -vv test_hello.py
 
-env:
+updatepython:
+	python3 -m pip install --upgrade pip
+
+installenv:
 	python3 -m venv ~/.udacityenv
+
+activateenv:	
 	source ~/.udacityenv/bin/activate
 
 lint:
 	pylint --disable=R,C hello.py
 
+envsetup: updatepython installenv activateenv
 all: install lint test
