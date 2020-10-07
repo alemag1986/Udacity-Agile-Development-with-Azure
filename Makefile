@@ -10,7 +10,7 @@ test:
 	#python -m pytest -vv --cov=myrepolib tests/*.py
 	#python -m pytest --nbval notebook.ipynb
 	. $(venv_path_active) &&\
-		python -m pytest -vv test_hello.py
+		python -m pytest -vv test_app.py
 
 lint:
 	#hadolint Dockerfile #uncomment to explore linting Dockerfiles
