@@ -15,7 +15,7 @@ test:
 lint:
 	#hadolint Dockerfile #uncomment to explore linting Dockerfiles
 	. $(venv_path_active) &&\
-		pylint --disable=R,C,W1203 app.py
+		pylint --disable=R,C,W1203,W0702 app.py
 		
 updatepython:
 	python3 -m pip install --upgrade pip

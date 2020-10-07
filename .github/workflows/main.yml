@@ -15,7 +15,7 @@ jobs:
         python-version: 3.5
     - name: Set up environment
       run: |
-        make envsetup
+        make installenv
     - name: Install dependencies
       run: |
         make install
