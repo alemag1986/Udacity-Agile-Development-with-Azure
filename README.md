@@ -38,7 +38,7 @@ Udacity final project building a CI/CD Pipeline for a Python-based machine learn
 
 * Project cloned into Azure Cloud Shell
 
-![Azure Cloud Shell](screenshots/Azure Cloud Shell  repo cloned.png)
+![Azure Cloud Shell](https://github.com/alemag1986/udacity-cicd-pipelines/blob/main/screenshots/Azure%20Cloud%20Shell%20%20repo%20cloned.png?raw=true)
 
 * Passing tests that are displayed after running the `make all` command from the `Makefile`
 
