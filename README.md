@@ -12,7 +12,8 @@ Udacity final project building a CI/CD Pipeline for a Python-based machine learn
 # Instructions
 
 * Architectural Diagram 
-(Shows how key parts of the system work)
+
+![Architectural Diagram](https://github.com/alemag1986/udacity-cicd-pipelines/blob/main/screenshots/system-work.png?raw=true)
 
 ## Dependencies/Pre-Requisites
 
@@ -47,7 +48,20 @@ Udacity final project building a CI/CD Pipeline for a Python-based machine learn
 
     Possible values for locations (`az account list-locations -o table`).
     Possible values of [skus](https://azure.microsoft.com/en-us/pricing/details/app-service/linux/)
+    
+## Steps to kick the CI-CD
 
+0. Clone the repository
+1. Make you change 
+2. Commit changes and push the changes to `main` branch in GitHub
+3. CI-CD triggered
+    - GitHub actions execute on changes in `main` branch: installing, testing and linting
+
+        Action [details](https://github.com/alemag1986/udacity-cicd-pipelines/blob/main/.github/workflows/main.yml): `udacity-cicd-pipelines/.github/workflows/main.yml`
+
+    -  AzureDevOps pipeline execute on changes in `main` branch: installing, linting and finally deploying the app to Azure.
+
+        Pipeline [details](https://github.com/alemag1986/udacity-cicd-pipelines/blob/main/.devops/pipelines/azure-pipelines.yml): `udacity-cicd-pipelines/.devops/pipelines/azure-pipelines.yml`
 
 ---
 
@@ -88,7 +102,17 @@ Udacity final project building a CI/CD Pipeline for a Python-based machine learn
 
 ## Enhancements
 
-<TODO: A short description of how to improve the project in the future>
+- GitFlow or branching strategy; Having multiple branches to support the development process and to have different states of the project, like features in develop, a version in QA, and a clean brach for releases to production.
+
+-  A long with the branching strategy, right now the proyect is running the CI and CD at the same time, if CI fails the CD will go on. It will be an imporvement to kick the CD once the CI passes the tests. A possible solution, the use of branches. 
+
+- CI-CD and docker: Docker scripts are available, but they are not linted nor used anywhere in the project. :(
+
+- Makefile; right now, it is very complete, but you still need 3 commands to run configure the environment, lint and test, and run. 
+
+- MORE TESTS! and better coverage. 
+
+- Naming convention guide missing and some service name using defaults (like Azure Service Plan).
 
 ## Demo 
 
