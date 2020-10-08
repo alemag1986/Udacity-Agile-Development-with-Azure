@@ -16,26 +16,38 @@ Udacity final project building a CI/CD Pipeline for a Python-based machine learn
 
 ## Dependencies/Pre-Requisites
 
+- Download the repository
 - Have a version of python 3.5.X installed
-- Have access to this repository
+- (optional) Have an Azure subscription to deploy in azure
 
-## Steps
+## Steps to Run
 
-<TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
+0. Clone the repository and go inside the new folder
+1. Run the command: `make setupenv` to set up the venv and update pip
+2. Run the command: `make all` to install python dependencies, lint and test the code.  
+3. Finally run the command: `make run` to run the application in localhost. 
+4. Optionally, you could run a prediction by executing `make prediction`.
 
-- Activate Cloud Shell
-- Generate ssh keys
-- ssh-keygen -t rsa
-- Add keys in GitHub
-- clone Github
-- run make envsetup
-- run make all
-- enable github actions -> set up a workflow yourself
-- update YAML with content from utils/pythonapp.yml
-- save action with pythonapp.yml name
-- `az webapp up -n was-udacity-cicd-pipelines -g rg-udacity-cicd-pipelines -l eastus2 --sku F1`
+## Steps to Initial Deploy
 
-TODO/>
+0. Connect to Azure and open the Azure Cloud Shell
+1. Upload/Clone the code into the Azure Cloud Shell
+    - In case of forking in GitHub:
+      - Generate ssh-keys (`ssh-keygen -t rsa`)
+      - Upload publick key to GitHub
+2. Make sure project run in Azure Cloud Shell
+    - run `make setupenv`
+    - run `make all`
+    - run `make run`       
+3. Once the application is tested locally proceed to deploy on azure, using the following command:  
+    ```
+    az webapp up -n <<replace-with-web-app-name>> -g <<replace-with-resource-group-name>> -l eastus2 --sku F1`
+    ```
+    Replace `replace-with-web-app-name` with the application name, `replace-with-resource-group-name` with the resource group name, and potentialy change the location (`-l`) and/or the server capacity (`--sku`).
+
+    Possible values for locations (`az account list-locations -o table`).
+    Possible values of [skus](https://azure.microsoft.com/en-us/pricing/details/app-service/linux/)
+
 
 ---
 
