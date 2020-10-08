@@ -30,5 +30,9 @@ prediction:
 predictionazure: 
 	./predict_scripts/make_predict_azure_app.sh
 
+run:
+	. $(venv_path_active) &&\
+		python app.py
+
 setupenv: updatepython installenv
 all: install lint test

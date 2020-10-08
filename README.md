@@ -16,6 +16,9 @@ Udacity final project building a CI/CD Pipeline for a Python-based machine learn
 
 ## Dependencies/Pre-Requisites
 
+- Have a version of python 3.5.X installed
+- Have access to this repository
+
 ## Steps
 
 <TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
