@@ -7,13 +7,11 @@ install:
 			pip install -r requirements.txt
 
 test:
-	#python -m pytest -vv --cov=myrepolib tests/*.py
-	#python -m pytest --nbval notebook.ipynb
 	. $(venv_path_active) &&\
-		python -m pytest -vv test_app.py
+		python -m pytest -vv --cov=udacityproject tests/*.py
 
 lint:
-	#hadolint Dockerfile #uncomment to explore linting Dockerfiles
+	hadolint Dockerfile #uncomment to explore linting Dockerfiles
 	. $(venv_path_active) &&\
 		pylint --disable=R,C,W1203,W0702 app.py
 		
@@ -26,6 +24,12 @@ installenv:
 freezeenv:
 	. $(venv_path_active) &&\
 		pip freeze > requirements.txt
+
+prediction:
+	./predict_scripts/make_prediction.sh
+
+predictionazure: 
+	./predict_scripts/make_predict_azure_app.sh
 
 setupenv: updatepython installenv
 all: install lint test
