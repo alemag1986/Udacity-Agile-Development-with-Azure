@@ -34,7 +34,7 @@ Udacity final project building a CI/CD Pipeline for a Python-based machine learn
 
 * Project running on Azure App Service
 
-![Azure App Service](https://github.com/alemag1986/udacity-cicd-pipelines/tree/main/screenshots/)
+![Azure App Service](https://github.com/alemag1986/udacity-cicd-pipelines/blob/main/screenshots/make%20prediction%20Azure.png?raw=true)
 
 * Project cloned into Azure Cloud Shell
 
@@ -42,15 +42,15 @@ Udacity final project building a CI/CD Pipeline for a Python-based machine learn
 
 * Passing tests that are displayed after running the `make all` command from the `Makefile`
 
-![make all](https://github.com/alemag1986/udacity-cicd-pipelines/tree/main/screenshots/)
+![Azure Cloud Shell make all](https://github.com/alemag1986/udacity-cicd-pipelines/blob/main/screenshots/Azure%20Cloud%20Shell%20local%20test.png?raw=true)
 
 * Output of a test run
 
-![test run](https://github.com/alemag1986/udacity-cicd-pipelines/tree/main/screenshots/)
+![test run](https://github.com/alemag1986/udacity-cicd-pipelines/blob/main/screenshots/GitHub%20Actions%20passing.png?raw=true)
 
 * Successful deploy of the project in Azure Pipelines.  
 
-![Azure Pipelines](https://github.com/alemag1986/udacity-cicd-pipelines/tree/main/screenshots/)
+![Azure Pipelines](https://github.com/alemag1986/udacity-cicd-pipelines/blob/main/screenshots/Azure%20DevOps%20pipeline.png?raw=true)
 
 * Running Azure App Service from Azure Pipelines automatic deployment
 
@@ -58,7 +58,7 @@ Udacity final project building a CI/CD Pipeline for a Python-based machine learn
 
 * Successful prediction from deployed flask app in Azure Cloud Shell. 
 
-![Azure Cloud Shell](https://github.com/alemag1986/udacity-cicd-pipelines/tree/main/screenshots/)
+![Azure Cloud Shell](https://github.com/alemag1986/udacity-cicd-pipelines/blob/main/screenshots/Azure%20Cloud%20Shell%20%20repo%20cloned.png?raw=true)
 
 * Output of streamed log files from deployed application
 
