@@ -88,3 +88,13 @@ https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp
 checklist: 
 - complete all of the todos in template README.md
 - make sure readme is in root directory of your github repo
+
+
+```
+[defaults]
+group = rg-udacity-cicd-pipelines
+sku = F1
+appserviceplan = alejandro.magnani_asp_Linux_eastus2_0
+location = eastus2
+web = was-udacity-cicd-pipelines
+```

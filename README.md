@@ -7,18 +7,18 @@ Udacity final project building a CI/CD Pipeline for a Python-based machine learn
 ## Project Plan
 
 * [Trello board](https://trello.com/b/bGd4Kp9p/cicd-pipeline-project)
-* A link to a spreadsheet that includes the original and final project plan>
+* [project plan](https://github.com/alemag1986/udacity-cicd-pipelines/blob/main/docs/CICD%20Pipeline%20Project%20Plan.xlsx)
 
 ## Instructions
 
 <TODO:  
 * Architectural Diagram (Shows how key parts of the system work)>
 
-<TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
-
 ### Dependencies/Pre-Requisites
 
-### Instructions
+### Steps
+
+<TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 
 - Activate Cloud Shell
 - Generate ssh keys
@@ -30,30 +30,40 @@ Udacity final project building a CI/CD Pipeline for a Python-based machine learn
 - enable github actions -> set up a workflow yourself
 - update YAML with content from utils/pythonapp.yml
 - save action with pythonapp.yml name
+- az webapp up -n was-udacity-cicd-pipelines -g rg-udacity-cicd-pipelines -l eastus2 --sku F1
 
 * Project running on Azure App Service
 
+![Azure App Service](https://github.com/alemag1986/udacity-cicd-pipelines/tree/main/screenshots/)
+
 * Project cloned into Azure Cloud Shell
+
+![Azure Cloud Shell]("https://github.com/alemag1986/udacity-cicd-pipelines/tree/main/screenshots/Azure Cloud Shell repo cloned.png")
 
 * Passing tests that are displayed after running the `make all` command from the `Makefile`
 
+![make all](https://github.com/alemag1986/udacity-cicd-pipelines/tree/main/screenshots/)
+
 * Output of a test run
 
-* Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
+![test run](https://github.com/alemag1986/udacity-cicd-pipelines/tree/main/screenshots/)
+
+* Successful deploy of the project in Azure Pipelines.  
+
+![Azure Pipelines](https://github.com/alemag1986/udacity-cicd-pipelines/tree/main/screenshots/)
 
 * Running Azure App Service from Azure Pipelines automatic deployment
 
-* Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
-The output should look similar to this:
+![automatic deployment](https://github.com/alemag1986/udacity-cicd-pipelines/tree/main/screenshots/)
 
-```bash
-udacity@Azure:~$ ./make_predict_azure_app.sh
-Port: 443
-{"prediction":[20.35373177134412]}
-```
+* Successful prediction from deployed flask app in Azure Cloud Shell. 
+
+![Azure Cloud Shell](https://github.com/alemag1986/udacity-cicd-pipelines/tree/main/screenshots/)
 
 * Output of streamed log files from deployed application
-> 
+
+![deployed application](https://github.com/alemag1986/udacity-cicd-pipelines/tree/main/screenshots/)
+
 
 ## Enhancements
 
