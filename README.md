@@ -58,9 +58,9 @@ TODO/>
 
 * Running Azure App Service from Azure Pipelines automatic deployment
 
-![automatic deployment](https://github.com/alemag1986/udacity-cicd-pipelines/tree/main/screenshots/AzureDevOps-pipeline-1.png?raw=true)
+![automatic deployment1](https://github.com/alemag1986/udacity-cicd-pipelines/tree/main/screenshots/AzureDevOps-pipeline-1.png?raw=true)
 
-![automatic deployment](https://github.com/alemag1986/udacity-cicd-pipelines/tree/main/screenshots/AzureDevOps-pipeline-2.png?raw=true)
+![automatic deployment2](https://github.com/alemag1986/udacity-cicd-pipelines/tree/main/screenshots/AzureDevOps-pipeline-2.png?raw=true)
 
 * Successful prediction from deployed flask app in Azure Cloud Shell. 
 
@@ -68,7 +68,7 @@ TODO/>
 
 * Output of streamed log files from deployed application
 
-![deployed application](https://github.com/alemag1986/udacity-cicd-pipelines/tree/main/screenshots/StreamedLogs.png?raw=true)
+![streamed log](https://github.com/alemag1986/udacity-cicd-pipelines/tree/main/screenshots/StreamedLogs.png?raw=true)
 
 
 ## Enhancements
