@@ -50,23 +50,25 @@ TODO/>
 
 * Output of a test run
 
-![test run](https://github.com/alemag1986/udacity-cicd-pipelines/blob/main/screenshots/GitHub%20Actions%20passing.png?raw=true)
+![test run](https://github.com/alemag1986/udacity-cicd-pipelines/blob/main/screenshots/GitHubActions-test-run.png?raw=true)
 
 * Successful deploy of the project in Azure Pipelines.  
 
-![Azure Pipelines](https://github.com/alemag1986/udacity-cicd-pipelines/blob/main/screenshots/Azure%20DevOps%20pipeline.png?raw=true)
+![Azure Pipelines](https://github.com/alemag1986/udacity-cicd-pipelines/blob/main/screenshots/AzurePipelines.png?raw=true)
 
 * Running Azure App Service from Azure Pipelines automatic deployment
 
-![automatic deployment](https://github.com/alemag1986/udacity-cicd-pipelines/tree/main/screenshots/)
+![automatic deployment](https://github.com/alemag1986/udacity-cicd-pipelines/tree/main/screenshots/AzureDevOps-pipeline-1.png?raw=true)
+
+![automatic deployment](https://github.com/alemag1986/udacity-cicd-pipelines/tree/main/screenshots/AzureDevOps-pipeline-2.png?raw=true)
 
 * Successful prediction from deployed flask app in Azure Cloud Shell. 
 
-![Azure Cloud Shell](https://github.com/alemag1986/udacity-cicd-pipelines/blob/main/screenshots/Azure%20Cloud%20Shell%20%20repo%20cloned.png?raw=true)
+![Azure Cloud Shell](https://github.com/alemag1986/udacity-cicd-pipelines/blob/main/screenshots/AzureCloudShell-prediction.png?raw=true)
 
 * Output of streamed log files from deployed application
 
-![deployed application](https://github.com/alemag1986/udacity-cicd-pipelines/tree/main/screenshots/)
+![deployed application](https://github.com/alemag1986/udacity-cicd-pipelines/tree/main/screenshots/StreamedLogs.png?raw=true)
 
 
 ## Enhancements
