@@ -4,19 +4,19 @@
 
 Udacity final project building a CI/CD Pipeline for a Python-based machine learning application.
 
-## Project Plan
+# Project Plan
 
 * [Trello board](https://trello.com/b/bGd4Kp9p/cicd-pipeline-project)
 * [project plan](https://github.com/alemag1986/udacity-cicd-pipelines/blob/main/docs/CICD%20Pipeline%20Project%20Plan.xlsx)
 
-## Instructions
+# Instructions
 
-<TODO:  
-* Architectural Diagram (Shows how key parts of the system work)>
+* Architectural Diagram 
+(Shows how key parts of the system work)
 
-### Dependencies/Pre-Requisites
+## Dependencies/Pre-Requisites
 
-### Steps
+## Steps
 
 <TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 
@@ -30,19 +30,23 @@ Udacity final project building a CI/CD Pipeline for a Python-based machine learn
 - enable github actions -> set up a workflow yourself
 - update YAML with content from utils/pythonapp.yml
 - save action with pythonapp.yml name
-- az webapp up -n was-udacity-cicd-pipelines -g rg-udacity-cicd-pipelines -l eastus2 --sku F1
+- `az webapp up -n was-udacity-cicd-pipelines -g rg-udacity-cicd-pipelines -l eastus2 --sku F1`
+
+TODO/>
+
+---
 
 * Project running on Azure App Service
 
-![Azure App Service](https://github.com/alemag1986/udacity-cicd-pipelines/blob/main/screenshots/make%20prediction%20Azure.png?raw=true)
+![Azure App Service](https://github.com/alemag1986/udacity-cicd-pipelines/blob/main/screenshots/AzureAppService.png?raw=true)
 
 * Project cloned into Azure Cloud Shell
 
-![Azure Cloud Shell](https://github.com/alemag1986/udacity-cicd-pipelines/blob/main/screenshots/Azure%20Cloud%20Shell%20%20repo%20cloned.png?raw=true)
+![Azure Cloud Shell](https://github.com/alemag1986/udacity-cicd-pipelines/blob/main/screenshots/AzureCloudShell-repo-cloned.png?raw=true)
 
 * Passing tests that are displayed after running the `make all` command from the `Makefile`
 
-![Azure Cloud Shell make all](https://github.com/alemag1986/udacity-cicd-pipelines/blob/main/screenshots/Azure%20Cloud%20Shell%20local%20test.png?raw=true)
+![Azure Cloud Shell make all](https://github.com/alemag1986/udacity-cicd-pipelines/blob/main/screenshots/AzureCloudShell-make-all.png?raw=true)
 
 * Output of a test run
 

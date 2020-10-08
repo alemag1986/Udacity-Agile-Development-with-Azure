@@ -8,7 +8,7 @@ install:
 
 test:
 	. $(venv_path_active) &&\
-		python -m pytest -vv --cov=udacityproject tests/*.py
+		python -m pytest -vv --cov=app tests/*.py
 
 lint:
 	. $(venv_path_active) &&\
