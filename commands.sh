@@ -1,0 +1,1 @@
+az webapp up -n was-udacity-cicd-pipelines --plan asp-udacity-cicd-pipelines -g rg-udacity-cicd-pipelines -l eastus2 --sku F1
