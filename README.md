@@ -70,6 +70,15 @@ Udacity final project building a CI/CD Pipeline for a Python-based machine learn
         
         Azure DevOps [Link](https://dev.azure.com/alemag1986/udacity-cicd-pipelines/_build)
 
+
+## Steps to run load tests (using locust)
+
+0. Clone the repository 
+1. Start venv `!important`: Python 3.6 minimun version supported for locust 
+2. Run the following command: `pip install locust==1.2.3`
+3. Run `locust` and browse to the url displayed in the console (like: 0.0.0.0.8089)
+4. Complete the form with the numbers of users, the spwan rate and the url of the site. 
+
 ---
 
 * Project running on Azure App Service
@@ -107,6 +116,13 @@ Udacity final project building a CI/CD Pipeline for a Python-based machine learn
 ![streamed log](https://github.com/alemag1986/udacity-cicd-pipelines/raw/main/screenshots/StreamedLogs.png)
 
 
+* Locust load test results
+
+![locust setup](https://github.com/alemag1986/udacity-cicd-pipelines/raw/main/screenshots/Locust-take1.png)
+
+![locust results](https://github.com/alemag1986/udacity-cicd-pipelines/raw/main/screenshots/Locust-take2.png)
+
+
 ## Enhancements
 
 - GitFlow or branching strategy; Having multiple branches to support the development process and to have different states of the project, like features in develop, a version in QA, and a clean brach for releases to production.
@@ -120,6 +136,10 @@ Udacity final project building a CI/CD Pipeline for a Python-based machine learn
 - MORE TESTS! and better coverage. 
 
 - Naming convention guide missing and some service name using defaults (like Azure Service Plan).
+
+- Include the load tests in Makefile.
+
+- Upgrade to Python version. Some libraries, like locust do not support Python 3.5.
 
 ## Demo 
 
