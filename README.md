@@ -62,6 +62,8 @@ Udacity final project building a CI/CD Pipeline for a Python-based machine learn
     -  AzureDevOps pipeline execute on changes in `main` branch: installing, linting and finally deploying the app to Azure.
 
         Pipeline [details](https://github.com/alemag1986/udacity-cicd-pipelines/blob/main/.devops/pipelines/azure-pipelines.yml): `udacity-cicd-pipelines/.devops/pipelines/azure-pipelines.yml`
+        
+        Azure DevOps [Link](https://dev.azure.com/alemag1986/udacity-cicd-pipelines/_build)
 
 ---
 
