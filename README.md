@@ -117,5 +117,5 @@ Udacity final project building a CI/CD Pipeline for a Python-based machine learn
 ## Demo 
 
 [![Udacity Assessment: Building a CI/CD Pipeline
-]()](https://www.youtube.com/watch?v=of2BtAVkd40 "Udacity Assessment: Building a CI/CD Pipeline
+](http://img.youtube.com/vi/of2BtAVkd40/0.jpg)](https://www.youtube.com/watch?v=of2BtAVkd40 "Udacity Assessment: Building a CI/CD Pipeline
 ")
