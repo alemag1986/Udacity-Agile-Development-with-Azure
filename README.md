@@ -116,4 +116,8 @@ Udacity final project building a CI/CD Pipeline for a Python-based machine learn
 
 ## Demo 
 
-[![Demo](https://img.youtube.com/vi/of2BtAVkd40/0.jpg)](https://www.youtube.com/watch?v=of2BtAVkd40)
+<iframe width="560" height="315"
+src="https://www.youtube.com/watch?v=of2BtAVkd40" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
