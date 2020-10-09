@@ -76,7 +76,7 @@ Udacity final project building a CI/CD Pipeline for a Python-based machine learn
 0. Clone the repository 
 1. Start venv `!important`: Python 3.6 minimun version supported for locust 
 2. Run the following command: `pip install locust==1.2.3`
-3. Run `locust` and browse to the url displayed in the console (like: 0.0.0.0.8089)
+3. Run `locust` and browse to the url displayed in the console (like: 0.0.0.0:8089)
 4. Complete the form with the numbers of users, the spwan rate and the url of the site. 
 
 ---
