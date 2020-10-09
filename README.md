@@ -139,7 +139,7 @@ Udacity final project building a CI/CD Pipeline for a Python-based machine learn
 
 - Include the load tests in Makefile.
 
-- Upgrade to Python version. Some libraries, like locust do not support Python 3.5.
+- Upgrade to Python version. Some libraries, like locust, do not support Python 3.5.
 
 ## Demo 
 
