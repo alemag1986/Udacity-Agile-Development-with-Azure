@@ -40,11 +40,16 @@ Udacity final project building a CI/CD Pipeline for a Python-based machine learn
     - run `make setupenv`
     - run `make all`
     - run `make run`       
-3. Once the application is tested locally proceed to deploy on azure, using the following command:  
+3. Once the application is tested locally proceed to deploy on azure, using the following commands:
+    
+    - `chmod +x command.sh`
+    - `./command.sh`
+
+    or you could potentially use the az cli:
     ```
-    az webapp up -n <<replace-with-web-app-name>> -g <<replace-with-resource-group-name>> -l eastus2 --sku F1`
+    az webapp up -n <<replace-with-web-app-name>> -g <<replace-with-resource-group-name>> --plan <<replace-with-plan-name>> -l eastus2 --sku F1`
     ```
-    Replace `replace-with-web-app-name` with the application name, `replace-with-resource-group-name` with the resource group name, and potentialy change the location (`-l`) and/or the server capacity (`--sku`).
+    Replace `replace-with-web-app-name` with the application name, `replace-with-resource-group-name` with the resource group name, `<<replace-with-plan-name>>` with plan name, and potentialy change the location (`-l`) and/or the server capacity (`--sku`).
 
     Possible values for locations (`az account list-locations -o table`).
     Possible values of [skus](https://azure.microsoft.com/en-us/pricing/details/app-service/linux/)
